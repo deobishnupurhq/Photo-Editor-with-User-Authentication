@@ -1,48 +1,40 @@
-# Photo-Editor-with-User-Authentication-
-Photo foreground extraction, refinement, and background removal tool.
-
-
 # Photo Editor DEO BPR (v.1.MAR.2026)
 
-​Welcome to the Photo Editor DEO BPR, a specialized tool designed for high-quality background removal and image enhancement. This application combines automated AI processing with manual fine-tuning controls to ensure professional results for official documentation.
+The **Photo Editor DEO BPR** is a specialized desktop application designed for streamlined background removal and image enhancement. Built with a focus on precision and ease of use, it features an AI-driven processing engine and synchronized viewing tools to ensure professional-grade results for official documentation.
 
-# ​How to Use
+## Key Features
 
-# ​1. Loading an Image
+* **AI Background Removal:** Automated isolation of subjects using the `u2netp` processing model.
+* **Synchronized Dual Viewers:** Compare your original and processed images side-by-side. Actions performed on one viewer (zoom or pan) are automatically mirrored in the other.
+* **Smart Canvas Clamping:** Intuitive navigation that prevents images from being panned out of the visible frame.
+* **Real-time Image Tuning:** Manual dials for adjusting mask size, brightness, contrast, and color saturation.
 
-​Browse: Click the "Browse Image" button to select a file from your computer.
-​Drag & Drop: You can also simply drag an image file from your folder and drop it directly onto the Input Image area.
+---
 
-# ​2. Navigation & Viewing
-​The application features two synchronized windows: the Input View (left) and the Output View (right). When you move or zoom one, the other follows, allowing for perfect comparison.
+## How to Use
 
-​Zooming: Use the Mouse Scroll Wheel while hovering over either image to zoom in or out.
+### 1. Loading Images
+* **Browse:** Click the **Browse Image** button to select a file from your local directory.
+* **Drag & Drop:** Drag any supported image file (JPG, PNG, BMP, etc.) and drop it directly onto the **Input Image** area to begin processing.
 
-​Panning (Moving): * Click and Drag with your mouse to move the image around within the viewer.
+### 2. Navigation & Viewing
+The interface uses a synchronized system to help you inspect details across both the input and output images simultaneously.
 
-​The application includes "Smart Clamping," which prevents the image from being dragged completely off-screen, ensuring you never lose sight of your work.
+* **Zooming:** Hover your mouse over either image and use the **Mouse Scroll Wheel** to zoom in for detail or zoom out for a full overview.
+* **Moving (Panning):** Click and hold the **Left Mouse Button** on the image, then drag to move the view. The "Smart Clamping" feature ensures the image always stays within reachable bounds.
 
-# ​3. Background Removal & Adjustments
+### 3. Fine-Tuning the Output
+After the initial AI pass, use the control panel on the right to refine the result:
+* **Mask Size:** Adjust this dial to clean up edges. Positive values expand the subject area, while negative values erode the edges to remove background "halos."
+* **Image Enhancements:** Use the Brightness, Contrast, and Color dials to match the required visual standards for your project.
 
-​Once an image is loaded, the background is automatically removed. You can then use the control dials on the right to perfect the image:
+### 4. Saving Results
+Click the **Save Output Image** button to export your finished work. The application handles high-quality encoding to ensure the output remains sharp and clear.
 
-​Mask Size (Erode/Dilate): Use this to "shrink" or "expand" the edges of your subject. This is helpful for removing leftover background "halos" or restoring thin edges.
+---
 
-​Brightness: Adjust the slider/dial to lighten or darken the subject.
-​Contrast: Increase to make colors pop or decrease to soften the image.
-​Color (Saturation): Enhance the vividness of the colors or turn the image toward grayscale.
+## Note
+_On the first launch, the application will automatically configure the AI model. An active internet connection is recommended during this initial setup to verify configuration._
 
-# ​4. Saving Your Work
 
-​Once you are satisfied with the edits, click the "Save Output Image" button.
-​Choose your destination folder. The file will be saved with high-quality settings, preserving the transparency (if saved as PNG) or applying a clean background.
-​System Setup
 
-​When you run the application for the first time, it will automatically configure the necessary AI models (u2netp).
-
-​Note: Please ensure you have an active internet connection during the very first launch to allow the system to verify your configuration and initialize the processing engine.
-
-# ​Troubleshooting
-
-​Image not moving: Ensure you are clicking and holding the mouse button while dragging. If the image is already zoomed out to fit the window, it will not move.
-​Blurry Edges: Try adjusting the Mask Size dial to sharpen the boundary between the subject and the background.
